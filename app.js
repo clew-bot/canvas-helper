@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
 
     let painting = false; 
 
-    function startPosition() {
+    const startPosition = () => {
         painting = true;
         draw(e);
     }
@@ -16,7 +16,7 @@ window.addEventListener("load", () => {
         ctx.beginPath();
     }
 
-    function draw(e) {
+    const draw = (e) => {
         if(!painting) return;
         ctx.lineWidth = 20;
         ctx.lineCape = "round";
